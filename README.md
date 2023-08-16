@@ -43,7 +43,7 @@ The bot will now start monitoring your GitHub repositories and posting updates t
 <br>
 <br>
 
-# How to Get GitHub Access Token
+# 🔑 How to Get GitHub Access Token 🔑
 
 <h3> <center> To use this bot, you need a GitHub Personal Access Token to authenticate API requests. Follow these steps to get your access token: </center> </h3>
 <br>
@@ -64,7 +64,7 @@ The bot will now start monitoring your GitHub repositories and posting updates t
 
 <br>
 
-<center> <h2> How to Get Mastodon Access Token: </h2></center>
+<center> <h2> 🔑 How to Get Mastodon Access Token 🔑: </h2></center>
 
 <center><h3>To post updates to Mastodon, you need an access token for your Mastodon account. Here's how you can obtain it:</h3></center>
 
