@@ -3,15 +3,20 @@ from mastodon import Mastodon
 import time
 import json
 
+def load_config(filename="config.json"):
+    with open(filename, "r") as config_file:
+        return json.load(config_file)
+
+config = load_config()
+
 # GitHub API configurations
-GITHUB_USERNAME = "Your GitHub username"
-GITHUB_ACCESS_TOKEN = "Your GitHub access token"
+GITHUB_USERNAME = config["github_username"]
+GITHUB_ACCESS_TOKEN = config["github_access_token"]
 GITHUB_API_URL = f"https://api.github.com/users/{GITHUB_USERNAME}/repos"
 
 # Mastodon API configurations
-MASTODON_API_URL = "Your Mastodon API URL"
-MASTODON_ACCESS_TOKEN = "Your Mastodon access token"
-
+MASTODON_API_URL = config["mastodon_api_url"]
+MASTODON_ACCESS_TOKEN = config["mastodon_access_token"]
 
 # Initialize Mastodon client
 mastodon = Mastodon(
