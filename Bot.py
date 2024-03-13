@@ -74,6 +74,7 @@ def main():
                 message = f"New commit detected on GitHub in repository '{repo}': {commit_url}"
                 post_to_mastodon(message)
                 last_commit_shas[repo] = latest_commit_sha
+                print(f"Posted to Mastodon: {message}")
 
         save_last_commit_shas(last_commit_shas)
 
